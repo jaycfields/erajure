@@ -1,0 +1,6 @@
+resource "erajure.jar"
+
+config default
+  append CLASSPATH=@/erajure.jar
+  append SOURCEPATH=@/erajure.jar
+end
