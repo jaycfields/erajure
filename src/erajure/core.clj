@@ -1,5 +1,5 @@
 (ns erajure.core
-  (:import [org.mockito]))
+  (:import org.mockito.Mockito))
 
 (defn mock
   ([klass]

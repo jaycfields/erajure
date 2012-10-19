@@ -1,4 +1,4 @@
-(defproject erajure "0.0.2"
+(defproject erajure "0.0.3"
   :description "clojure mockito wrapper"
   :url "https://github.com/jaycfields/erajure"
   :license {:name "Eclipse Public License"
