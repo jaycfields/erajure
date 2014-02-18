@@ -10,9 +10,9 @@
 
 (defmacro verify
   ([klass form]
-    `(-> (org.mockito.Mockito/verify ~klass) ~form))
+    `(-> (org.mockito.Mockito/verify ~klass) ~form nil?))
   ([klass times form]
-    `(-> (org.mockito.Mockito/verify ~klass ~times) ~form)))
+    `(-> (org.mockito.Mockito/verify ~klass ~times) ~form nil?)))
 
 (defn ->when [[meth r]]
   (list '-> 'm meth 'org.mockito.Mockito/when (list '.thenReturn r)))
